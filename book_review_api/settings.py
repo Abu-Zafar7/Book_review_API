@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-enc&t97re%1k6)%s+m_lc!v^7_j*a%dl@715%80yrffevx41c*"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -76,15 +77,19 @@ WSGI_APPLICATION = "book_review_api.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "newdb",
+#         "USER": "postgres",
+#         "PASSWORD": "danish99",
+#         "HOST": "localhost",
+#         "PORT": "5432",
+#     }
+# }
+import os
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "newdb",
-        "USER": "postgres",
-        "PASSWORD": "danish99",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 REST_FRAMEWORK = {
@@ -137,6 +142,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+MEDIA_URL = "media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
