@@ -40,5 +40,5 @@
 Access the API at: http://127.0.0.1:8000/
 
 ## Below are the endpoints to access the API
-
+“GET /api/reviews/”
 POST /api/token/
