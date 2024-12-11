@@ -52,3 +52,21 @@ curl -X POST <base_url>/api/token/ \
 curl -X GET <base_url>/api/reviews/ \
 -H "Authorization: Bearer your_access_token"
 
+[
+  {
+    "id": 1,
+    "title": "Book Title",
+    "review": "This book was amazing!",
+    "rating": 5,
+    "author": "Reviewer Name"
+  },
+  {
+    "id": 2,
+    "title": "Another Book",
+    "review": "Not as good as the first.",
+    "rating": 3,
+    "author": "Another Reviewer"
+  }
+]
+
+
