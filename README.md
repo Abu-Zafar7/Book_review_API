@@ -41,15 +41,15 @@ Access the API at: http://127.0.0.1:8000/
 
 ## Below are the endpoints to access the API
 
-> POST ``api/register``
-
-curl -X POST <base_url>/api/register/ \
--H "Content-Type: application/json" \
--d '{
+> POST `api/register`
+```json
+{
   "username": "your_username",
-  "email": "your_email@example.com",
   "password": "your_password"
-}'
+}
+
+
+
 
 
 
