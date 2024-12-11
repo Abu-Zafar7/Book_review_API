@@ -48,3 +48,7 @@ curl -X POST <base_url>/api/token/ \
   "username": "your_username",
   "password": "your_password"
 }'
+
+curl -X GET <base_url>/api/reviews/ \
+-H "Authorization: Bearer your_access_token"
+
