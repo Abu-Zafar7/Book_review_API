@@ -89,7 +89,9 @@ WSGI_APPLICATION = "book_review_api.wsgi.application"
 # }
 import os
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("NEW_DATABASE_URL"))
+    'default': dj_database_url.parse(
+        "postgresql://newdb_zy8l_user:Z9agwsCh4Szd0WvyOcocfIvSW4f0ZZhM@dpg-ctcl4dbtq21c73fs155g-a.oregon-postgres.render.com/newdb_zy8l"
+    )
 }
 
 REST_FRAMEWORK = {
