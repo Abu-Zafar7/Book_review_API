@@ -2,32 +2,32 @@
 
 ``$ git clone <repository-url>``
 
-- Navigate into the project directory
+## Navigate into the project directory
   
 ``$ cd Book_review_API``
 
-- Create a virtual environment
+## Create a virtual environment
   
 ``$ python -m venv venv``
 
-- Activate the virtual environment
+## Activate the virtual environment
 - On Windows
   
 ``$ venv\Scripts\activate``
 
-- On macOS/Linux
+## On macOS/Linux
   
 ``$ source venv/bin/activate``
 
-- Install required Python packages
+## Install required Python packages
   
 ``$ pip install -r requirements.txt``
 
-- Apply database migrations
+## Apply database migrations
   
 ``$ python manage.py migrate``
 
-- Run the local development server
+## Run the local development server
   
 ``$ python manage.py runserver``
 
