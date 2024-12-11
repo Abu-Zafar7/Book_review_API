@@ -40,5 +40,11 @@
 Access the API at: http://127.0.0.1:8000/
 
 ## Below are the endpoints to access the API
-“GET /api/reviews/”
-POST /api/token/
+
+```bash
+curl -X POST <base_url>/api/token/ \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "your_username",
+  "password": "your_password"
+}'
