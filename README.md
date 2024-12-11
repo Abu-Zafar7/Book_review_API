@@ -41,32 +41,15 @@ Access the API at: http://127.0.0.1:8000/
 
 ## Below are the endpoints to access the API
 
-```bash
-curl -X POST <base_url>/api/token/ \
+> POST ``api/register``
+
+curl -X POST <base_url>/api/register/ \
 -H "Content-Type: application/json" \
 -d '{
   "username": "your_username",
+  "email": "your_email@example.com",
   "password": "your_password"
 }'
 
-curl -X GET <base_url>/api/reviews/ \
--H "Authorization: Bearer your_access_token"
-
-[
-  {
-    "id": 1,
-    "title": "Book Title",
-    "review": "This book was amazing!",
-    "rating": 5,
-    "author": "Reviewer Name"
-  },
-  {
-    "id": 2,
-    "title": "Another Book",
-    "review": "Not as good as the first.",
-    "rating": 3,
-    "author": "Another Reviewer"
-  }
-]
 
 
