@@ -41,11 +41,11 @@ Access the API at: http://127.0.0.1:8000/
 
 ## Below are the endpoints to access the API
 
-> POST `api/register/`  to register a new user
+> POST `api/user/register/`  to register a new user
 
-> POST `api/token/` to obtain a JWT token
+> POST `api/user/login/` to obtain a JWT token
 
-> POST `api/refresh/` to refresh the JWT token
+> POST `api/user/token/refresh/` to refresh the JWT token
 
 > GET `api/books/` to get the list of books with their details
 
