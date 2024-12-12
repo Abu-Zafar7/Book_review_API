@@ -69,6 +69,7 @@ Access the API at: http://127.0.0.1:8000/
 
 > GET `api/books/?search=bookname` returns details of the book search in the query
 
+# USE POSTMAN TO CHECK THE ENDPOINTS
 
 
 
