@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Book Reviews API is a Django-based RESTful API for managing books and reviews. It provides endpoints for user registration, authentication, book management, review management, and book recommendations. The API also includes Swagger and ReDoc documentation for easy exploration and testing.
+The Book Reviews API is a Django-based RESTful API for managing books and reviews. It provides endpoints for user registration, authentication, book management, review management, and book recommendations. The API also includes Swagger for API documentation.
 
 ## Features
 
@@ -22,53 +22,47 @@ The Book Reviews API is a Django-based RESTful API for managing books and review
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/book-reviews-api.git
-   cd book-reviews-api
+   git clone https://github.com/Abu-Zafar7/Book_review_API.git
    ```
 
-
-
-
-
-
-## Clone this repository
-
-``$ git clone <repository-url>``
-
-## Navigate into the project directory
+2. Navigate into the project directory
   
-``$ cd Book_review_API``
+```bash
+cd Book_review_API
+```
 
-## Create a virtual environment
+3. Create a virtual environment
   
-``$ python -m venv venv``
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
-## Activate the virtual environment
-- On Windows
+4. Install required Python packages
   
-``$ venv\Scripts\activate``
+```bash
+pip install -r requirements.txt
+```
 
-## On macOS/Linux
+5. Use the default sqlite database for development
+
+6. Apply database migrations
   
-``$ source venv/bin/activate``
+```bash
+python manage.py migrate
+```
 
-## Install required Python packages
+7. Create a superuser to interact with the database
+
+```bash
+python manage.py runserver
+```
+
+8. Run the local development server
   
-``$ pip install -r requirements.txt``
-
-## Use the default sqlite database for development
-
-## Apply database migrations
-  
-``$ python manage.py migrate``
-
-## Create a superuser to interact with the database
-
-``$ python manage.py runserver``
-
-## Run the local development server
-  
-``$ python manage.py runserver``
+```bash
+python manage.py runserver
+```
 
 Access the API at: http://127.0.0.1:8000/
 
