@@ -24,6 +24,7 @@ The Book Reviews API is a Django-based RESTful API for managing books and review
    ```bash
    git clone https://github.com/yourusername/book-reviews-api.git
    cd book-reviews-api
+   ```
 
 
 
