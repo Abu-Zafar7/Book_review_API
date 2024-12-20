@@ -64,7 +64,7 @@ python manage.py runserver
 python manage.py runserver
 ```
 
-Access the API at: http://127.0.0.1:8000/
+## Access the API at: http://127.0.0.1:8000/
 
 ## Below are the endpoints to access the API
 
@@ -96,9 +96,11 @@ Access the API at: http://127.0.0.1:8000/
 
 > GET `api/books/?search=bookname` returns details of the book search in the query
 
-# USE POSTMAN TO CHECK THE ENDPOINTS
+## USE POSTMAN TO CHECK THE ENDPOINTS
 
 
+
+## Screenshots of the working app
 
 ![Screenshot (96)](https://github.com/user-attachments/assets/81e50e41-3805-441e-949f-95bd397d77d4)
 ![Screenshot (97)](https://github.com/user-attachments/assets/e460c110-c5d0-401c-b1ff-5f8136d44569)
