@@ -21,9 +21,9 @@ The Book Reviews API is a Django-based RESTful API for managing books and review
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Abu-Zafar7/Book_review_API.git
-   ```
+```bash
+git clone https://github.com/Abu-Zafar7/Book_review_API.git
+```
 
 2. Navigate into the project directory
   
@@ -100,6 +100,6 @@ Access the API at: http://127.0.0.1:8000/
 
 
 
-
-
-
+![Screenshot (96)](https://github.com/user-attachments/assets/81e50e41-3805-441e-949f-95bd397d77d4)
+![Screenshot (97)](https://github.com/user-attachments/assets/e460c110-c5d0-401c-b1ff-5f8136d44569)
+![Screenshot (98)](https://github.com/user-attachments/assets/c3a6f29e-1f99-48f2-b616-89f759938d2f)
