@@ -68,7 +68,7 @@ python manage.py runserver
 
 ## Below are the endpoints to access the API
 
-> POST `api/user/register/`  to register a new user. Use - username, email and password as json fields to register a user
+- POST `api/user/register/`  to register a new user. Use - username, email and password as json fields to register a user
 
 > POST `api/user/login/` to obtain a JWT token. Use - username and password to obtain a JWT token
 
